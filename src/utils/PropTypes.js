@@ -30,7 +30,6 @@ export function transitionTimeout(transitionType) {
 export const timeoutsShape = React.PropTypes.oneOfType([
   React.PropTypes.number,
   React.PropTypes.shape({
-    appear: React.PropTypes.number,
     enter: React.PropTypes.number,
     exit: React.PropTypes.number,
   }).isRequired,
@@ -48,7 +47,5 @@ export const classNamesShape = React.PropTypes.oneOfType([
     enterActive: React.PropTypes.string,
     leave: React.PropTypes.string,
     leaveActive: React.PropTypes.string,
-    appear: React.PropTypes.string,
-    appearActive: React.PropTypes.string,
   }),
 ]);
